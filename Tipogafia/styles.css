@@ -1,0 +1,38 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+body {
+    background: #1E2021;
+}
+.post {
+    padding: 15px;
+    /* background: #2E29B7; */
+    border-radius: 5px;
+    color: #fff;
+}
+.post:hover {
+    background: #35373a94;
+    transition: .7s;
+}
+.titulo-post {
+    color: #fff;
+    font-family: "PT Sans narrow", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+}
+.titulo-post:hover {
+    transition: .3s;
+    color: #22A9E1;
+}
+.user-post {
+    color: #494848;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+.content-post {
+    font-size: 18px;
+}
