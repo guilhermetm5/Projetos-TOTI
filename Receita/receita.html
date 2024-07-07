@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Receita de Bolo</title>
+    <!-- fonts usada no exemplo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Meu Css  -->
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
-    <section class="header__section">
+    <section class="header__section" id="topo">
       <img src="./img/bolo.jfif" alt="bolo" />
       <h1 class="titulo titulo__corPadrao">Receita de bolo de chocolate</h1>
       <p class="autor"><span>Autor:</span>João Guilherme</p>
@@ -28,6 +35,12 @@
         o melhor bolo de chocolate saindo do seu forno.
       </p>
     </section>
+
+    <section class="info__section">
+        <h3><span>Preparo:</span>40 minutos</h3>
+        <h3><span>Rendimento:</span>12 porções</h3>
+      </section>
+      
     <section class="ingredientes__section">
       <h3 class="titulo__corPadrao">Ingredientes:</h3>
       <ul>
@@ -40,10 +53,7 @@
         <li>2 colheres (sopa) de fermento</li>
       </ul>
     </section>
-    <section>
-      <h3><span>Preparo:</span>40 minutos</h3>
-      <h3><span>Rendimento:</span>12 porções</h3>
-    </section>
+    
     <section class="preparo__section">
       <h2 class="titulo__corPadrao">Modo de Preparo</h2>
       <ol class="lista__preparo">
@@ -62,7 +72,7 @@
       </ol>
     </section>
     <section class="video__section">
-        <h2 class="titulo__corPadrao">Video da Receita</h2>
+      <h2 class="titulo__corPadrao">Video da Receita</h2>
       <iframe
         width="560"
         height="315"
@@ -73,7 +83,7 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-      <p>Voltar para o Topo</p>
+      <p><a href="#topo">Voltar para o topo</a></p>
     </section>
   </body>
 </html>

@@ -8,22 +8,28 @@ body {
   font-size: 21px;
   letter-spacing: 0px;
   color: #000000;
+  font: normal normal 600 21px/34px "Montserrat";
 }
 section {
   border-bottom:  3px solid#999999;
 }
 
+/* seção do header  */
+
 .titulo {
-  font: 1em normal normal 900 89px/79px Montserrat;
+  font: 1em normal normal 900 89px/79px "Montserrat";
   opacity: 1;
   font-size: 89px;
+  font-weight: 900;
+  line-height: 80px;
+
 }
 .titulo__corPadrao {
   color: #ffb300;
 }
 .autor {
   text-align: right;
-  font: normal normal bold 21px/34px Montserrat;
+  font: normal normal bold 21px/34px "Montserrat";
 }
 .autor > span {
   text-transform: uppercase;
@@ -32,8 +38,21 @@ section {
 .text {
   text-align: justify;
 }
+/* Seção da informação de preparo e rendimento  */
+.info__section  h3{
+    font: normal normal medium 21px/25px "Montserrat";
+    font-size: 21px;
+}
+.info__section  h3 span {
+    text-transform: uppercase;
+    font: normal normal 900 21px/25px "Montserrat";
+    margin-right: 5px;
+    letter-spacing: -2px;
+}
+/* Seção do video  */
+
 .video__section {
-    font: 1em normal normal 900 89px/79px Montserrat;
+    font: 1em normal normal 900 89px/79px "Montserrat";
     letter-spacing: 0px;
 }
 .video__section >h2 {
@@ -45,4 +64,5 @@ section {
 .video__section > p {
     text-transform: uppercase;
     color: #0037B3;
+    
 }
