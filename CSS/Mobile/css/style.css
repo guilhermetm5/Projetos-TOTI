@@ -1,0 +1,161 @@
+/* Feito por João Guilherme em 11/07/2024 */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    width: 375pt;
+}
+header {
+    width: 375pt;
+    height: 60pt;
+    display: flex;
+    justify-content: space-between;
+    background: #180E0C;
+    color: #FFFFFF;
+    align-items: center;
+    border: 1px solid #707070;
+}
+.logo {
+    color: inherit;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 20pt;
+}
+.nav {
+    display: flex;
+}
+.menu__icon {
+    display: none;
+    margin-right: 35px;
+}
+.banner {
+    object-fit: cover;
+    width: 375pt;
+    height: 134pt;
+}
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 146pt;
+    margin: 20px 20px;
+}
+.card img {
+    object-fit: cover;
+    width: 146pt;
+    height: 128pt;
+}
+.card__titulo {
+    font-size: 13pt;
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+}
+.card__conteudo {
+    font-size: 10pt;
+}
+.conteudo__dois {
+    background-color: #37201A;
+}
+.conteudo__left, .conteudo__mid, .conteudo__tres {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.conteudo__titulo, .ctres__left, .ctres__titulo {
+    color: #C27159;
+    font-size: 21pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.mini__card {
+    display: flex;
+    text-align: left;
+    color: #7A503E;
+    margin-bottom: 20px;
+}
+.conteudo__imagem {
+    width: 69pt;
+    height: 69pt;
+}
+.conteudo__conteudo {
+    margin-left: 15px;
+}
+.conteudo__imagemGrande {
+    width: 302pt;
+    height: 96pt;
+    margin: 20px auto;
+}
+.conteudo__right {
+    padding: 30px;
+}
+.conteudo__conteudoGrande {
+    text-align: left;
+    width: 302pt;
+    color: #7A503E;
+}
+.conteudo__tres {
+    background-color: #251611;
+}
+.first__conteudo {
+    font-size: 8pt;
+    margin-bottom: 20px;
+}
+.first__conteudo a {
+    color: inherit;
+    text-decoration: underline;
+}
+.second__conteudo, .third__conteudo {
+    font-size: 8pt;
+    color: #7A503E;
+    margin-bottom: 20px;
+}
+.ctres_right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #7A503E;
+    margin-bottom: 20px;
+}
+.nav__aside {
+    color: #7A503E;
+}
+.nav__aside ul li{
+    margin-bottom: 15px;
+    
+}
+.nav__side--color a {
+    color: inherit;
+    font-size: 8pt;
+    text-decoration: underline;
+}
+footer {
+    background-color: #180E0C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.footer__span {
+    color: #7A503E;
+    font-size: 8pt;
+}
+@media (max-width: 380pt) {
+    .menu__icon {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+}
