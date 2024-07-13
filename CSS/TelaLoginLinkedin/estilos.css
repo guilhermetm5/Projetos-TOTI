@@ -2,16 +2,65 @@
     box-sizing: border-box;
     font-family: system-ui, sans-serif;
 }
-body {
-    height: 568px;
-    width: 320px;
-    border: 1px solid black;
-    margin: 10px auto;
-}
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px 40px;
+}
+.logotipo {
+    align-self: flex-start;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 420px;
+}
+.titulo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.subtitulo {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.usuario,
+.senha {
+    margin-top: 20px;
+    font-size: 16px;
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid;
+    padding: 8px;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #0a66c2;
+    text-decoration: none;
+}
+.esqueceu__senha {
+    margin-top: 10px;
+}
+.login {
+    background-color: #0073b1;
+    color: #fff;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-top: 16px;
+}
+.criar__conta {
+    margin-top: 20px;
+}
+footer {
+    display: none;
 }
