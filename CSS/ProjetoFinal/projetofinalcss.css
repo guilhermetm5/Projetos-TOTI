@@ -1,0 +1,30 @@
+body {
+    
+}
+.navegacao {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3A3A3A;
+}
+.navegacao__img {
+    background-image: url(./img.png);
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+.navegacao__nav {
+    display: flex;
+    color: #FFFFFF;
+}
+.navegacao__nav li {
+    margin: 20px 10px;
+}
+.navegacao__nav li a {
+    color: inherit;
+    font-size: 13px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
