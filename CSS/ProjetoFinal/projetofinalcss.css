@@ -1,4 +1,8 @@
-
+body {
+    font-family: "Segoe UI";
+    height: 100vh;
+    color: #707070;
+}
 
 /* Inicio da barra de navegação  */
 
@@ -41,8 +45,161 @@
     width: 100%;
     height: 377px;
 }
+.lore {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.lore__user {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+.avatar {
+    top: -150px;
+    left: calc(60% - 10px);
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+.avatar__conteudo{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.avatar__img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+
+
+/* Inicio da badge  */
+.avatar__badge {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 80px);
+    background: #DEDEDE;
+    color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar__badge__txt {
+    text-align: left;
+    font-size: 8px;
+    position: absolute;
+    bottom: -20px;
+}
+.avatar__badge1 {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 10px);
+    background: #DEDEDE;
+    color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar__badge2 {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - (-60px));
+    background: #DEDEDE;
+    color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* fim da badge  */
+
+.lore__apresentacao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.lore__titulo {
+    margin-top: 20px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 55px;
+}
+.lore__subtitulo {
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: 100;
+    font-style: italic;
+}
+.lore__introducao {
+    margin-top: 20px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 34px;
+}
+.lore__content {
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 21px;
+    font-weight: bolder 100;
+    width: 580px;
+    height: 305px;
+}
 
 /* Sobre  formação  */
 .formacao {
     background-color: #DEDEDE;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.formacao__content {
+    text-align: left;
+}
+.formacao__titulo {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 55px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.formacao__conteudo {
+    margin-top: 20px;
+}
+.formacao__conteudo__item {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    border-left: 8px solid #000000;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 20px;
+}
+.formacao__escola {
+    margin-top: 10px;
+    font-size: 21px;
+    font-style: bold;
+    font-weight: 600;
+}
+.nomeUniversidade {
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 0px;
 }
