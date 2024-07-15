@@ -1,0 +1,18 @@
+.cabecalho {
+    background-color: orange;
+}
+.conteudo {
+    background-color: gray;
+}
+.lateral {
+    background-color: darkgray;
+}
+.publicidade-lateral {
+    background-color: gold;
+}
+.publicidade-final {
+    background-color: darkorange;
+}
+.rodape {
+    background-color: red;
+}
