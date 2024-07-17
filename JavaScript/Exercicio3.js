@@ -6,11 +6,11 @@ function Pessoa(nome, idade) {
   this.nome = nome;
   this.idade = idade;
 }
-function MaiorMenor(nome, outroNome) {
-  if (this.nome !== this.outroNome) {
-    console.log(`${nome} e ${outroNome} são nomes diferentes!`);
+function MaiorMenor(nome1, nome2) {
+  if (nome1.nome !== nome2.nome) {
+    console.log(`${nome1.nome} e ${nome2.nome} são nomes diferentes!`);
   } else {
-    console.log(`${nome} e ${outroNome} tem nomes iguais!`);
+    console.log(`${nome1.nome} e ${nome2.nome} tem nomes iguais!`);
   }
 }
 //loop para cadastrar novas pessoas
@@ -43,8 +43,7 @@ while (i != 0) {
       alert(
         'Nenhum serviço selecionado o programa foi encerrado! Confira os dados no console!'
       );
-      console.log('nenhum serviço foi selecionado!');
-      console.log('Dados capturados:');
+      console.log('nenhum serviço foi selecionado! Nada foi cadastrado!');
       i = 0;
   }
 }
