@@ -8,8 +8,8 @@ alert('Cadastrado com sucesso! Veja suas informações no console!');
 console.log(`Cadastrado! informações do cadastrado: `);
 
 Number(idade);
-console.table({
+console.table(
   nome,
   sobrenome,
   idade,
-});
+);
