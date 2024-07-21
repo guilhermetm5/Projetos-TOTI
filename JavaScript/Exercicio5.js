@@ -2,6 +2,7 @@
 let button = document.querySelector('#enviar');
 let cep = document.querySelector('#cep');
 let lista = document.querySelector('#lista');
+let errorCep = document.querySelector('#erro-cep');
 let dataCEP;
 
 // Funções
@@ -23,7 +24,11 @@ function conexao(cep) {
     })
     .catch((error) => console.error('Requisição falhou ', error));
 }
+//vericando o valor do input
 
+function verificar(cep) {
+  return cep.length < 8 && !isNaN(cep);
+}
 //Salvando conteúdo de input
 
 function salvar(event) {
@@ -42,3 +47,15 @@ function exibir(dataCEP) {
 
 // Eventos
 button.addEventListener('click', salvar);
+cep.addEventListener('input', function () {
+  let novoCep = cep.value;
+
+  if (verificar(novoCep)) {
+    errorCep.textContent = 'Cep incorreto o cep deve conter 8 dígitos!';
+    enviarDisabled(button);
+  } else {
+    button.classList.remove('btn-secondary');
+    button.classList.add('btn-success');
+    errorCep.textContent = '';
+  }
+});
