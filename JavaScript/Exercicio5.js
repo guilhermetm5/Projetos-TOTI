@@ -11,10 +11,15 @@ let dataCEP;
 enviarDisabled();
 
 function enviarDisabled() {
+  button.classList.remove('btn-success');
+  button.classList.add('btn-secondary');
   button.disabled = true;
 }
+//ativando botão enviar
+
 function enviarEnabled() {
   button.disabled = false;
+  button.classList.add('btn-success');
 }
 
 //chamada da API
@@ -32,18 +37,19 @@ function conexao(cep) {
 function verificar(event) {
   let novoCep = event.target.value;
 
-  if (novoCep.length !== 8 && !isNaN(novoCep)) {
+  if (novoCep.trim() === '') {
+    errorCep.textContent = 'Cep não pode estar Vazio!';
+    enviarDisabled(button);
+  } else if (novoCep.length !== 8 && !isNaN(novoCep)) {
     errorCep.textContent = 'Cep incorreto o cep deve conter 8 dígitos!';
-    button.classList.add('btn-secondary');
     enviarDisabled(button);
   } else {
-    button.classList.remove('btn-secondary');
-    button.classList.add('btn-success');
+    errorCep.classList.remove('btn-secondary');
     errorCep.textContent = '';
-    enviarEnabled();
+    enviarEnabled(button);
   }
 }
-
+//verificando se está vazio
 function campoVazio(campo) {
   return campo.trim() === '';
 }
