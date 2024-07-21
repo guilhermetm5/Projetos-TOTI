@@ -8,11 +8,14 @@ let dataCEP;
 // Funções
 
 //desabilitando o botão enviar
+enviarDisabled();
+
 function enviarDisabled() {
   button.disabled = true;
 }
-//desabilitando o button para nada ser enviado antes da verificação
-enviarDisabled();
+function enviarEnabled() {
+  button.disabled = false;
+}
 
 //chamada da API
 function conexao(cep) {
@@ -26,8 +29,23 @@ function conexao(cep) {
 }
 //vericando o valor do input
 
-function verificar(cep) {
-  return cep.length < 8 && !isNaN(cep);
+function verificar(event) {
+  let novoCep = event.target.value;
+
+  if (novoCep.length !== 8 && !isNaN(novoCep)) {
+    errorCep.textContent = 'Cep incorreto o cep deve conter 8 dígitos!';
+    button.classList.add('btn-secondary');
+    enviarDisabled(button);
+  } else {
+    button.classList.remove('btn-secondary');
+    button.classList.add('btn-success');
+    errorCep.textContent = '';
+    enviarEnabled();
+  }
+}
+
+function campoVazio(campo) {
+  return campo.trim() === '';
 }
 //Salvando conteúdo de input
 
@@ -46,16 +64,6 @@ function exibir(dataCEP) {
 }
 
 // Eventos
-button.addEventListener('click', salvar);
-cep.addEventListener('input', function () {
-  let novoCep = cep.value;
 
-  if (verificar(novoCep)) {
-    errorCep.textContent = 'Cep incorreto o cep deve conter 8 dígitos!';
-    enviarDisabled(button);
-  } else {
-    button.classList.remove('btn-secondary');
-    button.classList.add('btn-success');
-    errorCep.textContent = '';
-  }
-});
+cep.addEventListener('input', verificar);
+button.addEventListener('click', salvar);
