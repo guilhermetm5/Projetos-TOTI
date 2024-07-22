@@ -217,6 +217,7 @@ body {
     background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 .projetos h1 {
     padding-top: 20px;
@@ -263,4 +264,27 @@ body {
     border-radius: 5px;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+/* section contato  */
+
+.contato {
+    background-color: #000000;
+    display: flex;
+    color: #FFFFFF;
+}
+.icones {
+    
+}
+.contato__medalha{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.contato__icones {
+    display: flex;
+    flex-direction: column;
+}
+.img__subtitulo {
+    display: block;
 }
