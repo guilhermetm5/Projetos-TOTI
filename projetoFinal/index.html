@@ -11,6 +11,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- meu css  -->
+     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="container mt-5">
@@ -51,12 +53,12 @@
             </div>
             <div class="row mb-3">
               <div class="col-md-2">
-                <label for="pais" class="form-label"></label>
-                <input type="text" id="pais" value="Brasil" required disabled />
+                <label for="pais" class="form-label">País</label>
+                <input type="text" class="form-control" id="pais" value="Brasil" required disabled />
               </div>
 
               <div class="col-md-5">
-                <label for="estado" class="form-label"></label>
+                <label for="estado" class="form-label">Estado</label>
                 <select id="estado" class="form-control" required>
                   <option value="">Selecione um estado</option>
                   <option value="AC">Acre</option>
@@ -103,7 +105,7 @@
                 <input type="number" id="prova2" class="form-control" required/>
               </div>
             </div>
-            <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar</button>
+            <button type="button" class="btn btn-primary mt-5" onclick="enviarFormulario()">Enviar</button>
         </form>
       </div>
       <div class="table-container mt-5">
