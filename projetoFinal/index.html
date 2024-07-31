@@ -95,7 +95,7 @@
             </div>
             <div class="row-mb-3">
               <div class="col-md-2">
-                <label for="proval" class="form-label">Prova 1</label>
+                <label for="prova1" class="form-label">Prova 1</label>
                 <input type="number" id="prova1" class="form-control" required/>
               </div>
               <div class="col-md-2">
@@ -105,6 +105,30 @@
             </div>
             <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar</button>
         </form>
+      </div>
+      <div class="table-container mt-5">
+        <h2 class="mb-4">Tabela de Alunos</h2>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+          <th>Email</th>
+          <th>Nascimento</th>
+          <th>Cidade</th>
+          <th>Estado</th>
+          <th>País</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Média</th>
+          <th>Situação</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+          <!-- Dados dos alunos serão inseridos aqui via JS  -->
+        </tbody>
+        </table>
       </div>
     </div>
     <script src="./js/script.js"></script>
