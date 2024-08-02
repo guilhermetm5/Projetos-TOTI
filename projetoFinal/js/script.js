@@ -1,5 +1,7 @@
 console.log('Projeto Turma 48');
 
+const students = [];
+
 class Studant {
   constructor(
     nome,
@@ -60,5 +62,21 @@ function enviarFormulario() {
     prova1,
     prova2
   );
-  console.log(student.exibirDados());
+  students.push(Studant);
+  console.log(students);
+
+  renderData();
+  function renderData() {
+    const studentTableBody = document.getElementById('studentTableBody');
+    studentTableBody.innerHTML = '';
+    students.forEach((student) => {
+      const row = document.createElement('tr');
+    });
+    Object.values(student).forEach((value) => {
+      const cell = document.createElement('td');
+      cell.textContent = value;
+      studentTableBody.appendChild(cell);
+    });
+    studentTableBody.appendChild(row);
+  }
 }
