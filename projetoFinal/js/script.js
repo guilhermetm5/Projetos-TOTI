@@ -12,6 +12,7 @@ const cpf = document
       document.getElementById('cpf-erro-message').style.display = 'none';
     }
   });
+
 const students = [];
 
 class Studant {
@@ -74,8 +75,7 @@ function enviarFormulario() {
     prova1,
     prova2
   );
-  students.push(Studant);
-  console.log(students);
+  students.push(student);
 
   renderData();
   function renderData() {
@@ -92,4 +92,11 @@ function enviarFormulario() {
       studentTableBody.appendChild(row);
     });
   }
+}
+
+function mascararCPF(input) {
+  input = input.replace(/(\d{3})(\d)/, '$1.$2');
+  input = input.replace(/(\d{3})(\d)/, '$1.$2');
+  input = input.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+  return input;
 }
