@@ -1,5 +1,17 @@
-console.log('Projeto Turma 48');
+//console.log('Projeto Turma 48');
 
+const cpf = document
+  .getElementById('cpf')
+  .addEventListener('input', function (e) {
+    const input = e.target.value;
+    const cpfIsValid = /^[0-9]*$/.test(input);
+    if (!cpfIsValid) {
+      e.target.value = input.slice(0, -1);
+      document.getElementById('cpf-erro-message').style.display = 'block';
+    } else {
+      document.getElementById('cpf-erro-message').style.display = 'none';
+    }
+  });
 const students = [];
 
 class Studant {
@@ -69,14 +81,15 @@ function enviarFormulario() {
   function renderData() {
     const studentTableBody = document.getElementById('studentTableBody');
     studentTableBody.innerHTML = '';
+
     students.forEach((student) => {
       const row = document.createElement('tr');
+      Object.values(student).forEach((value) => {
+        const cell = document.createElement('td');
+        cell.textContent = value;
+        studentTableBody.appendChild(cell);
+      });
+      studentTableBody.appendChild(row);
     });
-    Object.values(student).forEach((value) => {
-      const cell = document.createElement('td');
-      cell.textContent = value;
-      studentTableBody.appendChild(cell);
-    });
-    studentTableBody.appendChild(row);
   }
 }
